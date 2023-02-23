@@ -1,0 +1,8 @@
+@use "./partials/typography";
+@use "./partials/reset";
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+
+@use "./partials/header";
+@use "./partials/gameCards";
+@use "./partials/footer";

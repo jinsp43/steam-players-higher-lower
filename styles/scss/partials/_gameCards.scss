@@ -1,0 +1,61 @@
+@use "./typography";
+@use "./reset";
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.game {
+  height: 50rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  &--known {
+    border-right: 2px solid black;
+  }
+
+  &--unknown {
+  }
+
+  &__score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    margin: 0;
+    height: 4rem;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__name {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  &__players {
+    font-size: 4rem;
+    color: orange;
+  }
+}
+
+.btn {
+  width: 35%;
+  height: 4rem;
+  margin: 1rem 0;
+  border-radius: 6px;
+
+  &--more {
+    background-color: green;
+    color: white;
+  }
+
+  &--less {
+    background-color: red;
+    color: white;
+  }
+}

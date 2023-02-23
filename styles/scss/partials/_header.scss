@@ -1,0 +1,27 @@
+@use "./typography";
+@use "./reset";
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.header {
+  background-color: $black;
+  color: $white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2rem;
+
+  &__link {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      color: orange;
+    }
+  }
+
+  &__heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
